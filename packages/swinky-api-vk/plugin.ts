@@ -9,6 +9,10 @@ const vk: VK = new VK({
   apiMode: 'parallel'
 })
 
+export function getVKClient (): VK {
+  return vk
+}
+
 module.exports.run = async () => {
   Logger.info('Started VK API plugin!')
 

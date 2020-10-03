@@ -1,8 +1,8 @@
 # Swinky
 
-Swinky a Discord and VK bot.
+Swinky - это Discord и VK бот с системой плагинов.
 
 ## Get started
 
-Type in terminal:
+Введите в терминал:
 yarn build && yarn start
