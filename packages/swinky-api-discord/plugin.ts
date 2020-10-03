@@ -33,7 +33,7 @@ module.exports.run = async () => {
       const swinkyCommand = CommandDispatcher.get().get(command)
       const context = swinkyCommand.parse(
         message.content,
-        message.member.id,
+        message.author.id,
         message
       )
       swinkyCommand.dispatch(context)
