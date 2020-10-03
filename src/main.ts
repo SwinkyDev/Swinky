@@ -10,7 +10,7 @@ async function run () {
         .filter(name => name === 'plugin.js')
       for (const mainFile of plugins) {
         const main = require(`../packages/${filePackage}/${mainFile}`)
-        main.run()
+        main.run().catch(Logger.error)
       }
     }
   }
