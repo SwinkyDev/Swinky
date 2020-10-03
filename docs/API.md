@@ -53,9 +53,23 @@ module.exports.run = async () => {
 }
 ```
 
+## Боты
+
 Чтобы получить клиенты ботов используйте:
 
 ```javascript
 getDiscordClient() // import { getDiscordClient } from '@swinky/api-discord/plugin'
 getVKClient() // import { getVKClient } from '@swinky/api-vk/plugin'
+```
+
+## Плагины
+
+Чтобы сделать свой плагин, создайте папку в packages и введите там yarn init, затем установите туда нужные пакеты (если нужно).
+
+И создайте там файл plugin.ts со следующим содержимым:
+
+```javascript
+module.exports.run = async () => {
+  // Код при запуске плагина
+}
 ```
