@@ -2,7 +2,7 @@
   "name": "@swinky/main",
   "private": "true",
   "workspaces": ["packages/**"],
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Swinky a Discord and VK bot.",
   "main": "src/main.js",
   "repository": "https://github.com/kdevmc/Swinky",

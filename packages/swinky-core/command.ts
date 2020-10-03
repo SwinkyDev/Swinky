@@ -32,6 +32,8 @@ export abstract class SwinkyCommand {
 
   abstract dispatch (context: CommandContext)
   abstract description (): string
+  abstract argumentParser (context: CommandContext): ArgumentParser
+  abstract argumentParserWithoutContext (): ArgumentParser
 
   get name (): string {
     return this._name
@@ -116,5 +118,51 @@ export class CommandDispatcher {
     } else {
       return this.instance
     }
+  }
+}
+
+export class ArgumentParser {
+  private _array = []
+  private _contextArgs = []
+  private _lastArgumentBuilder = false
+
+  constructor (
+    contextArgs?: string[],
+    lastArgumentBuilder?: boolean,
+    ...args: string[]
+  ) {
+    if (contextArgs) {
+      if (contextArgs.length < args.length) {
+        return
+      }
+
+      this._contextArgs = contextArgs
+      this._lastArgumentBuilder = lastArgumentBuilder
+      this._array = args
+    } else {
+      this._array = args
+    }
+  }
+
+  thenArgument (argument: string, callback: (value: string) => void) {
+    if (!this._array.includes(argument)) return
+
+    const index = this._array.indexOf(argument)
+
+    if (index == this._array.length - 1 && this._lastArgumentBuilder) {
+      var builder = ''
+      for (let i = index; i < this._contextArgs.length; i++) {
+        if (i != this._contextArgs.length - 1)
+          builder += this._contextArgs[i] + ' '
+        else builder += this._contextArgs[i]
+      }
+      callback(builder)
+    } else {
+      callback(this._contextArgs[index])
+    }
+  }
+
+  get array (): string[] {
+    return this._array
   }
 }
