@@ -6,6 +6,25 @@ import {
 } from '@swinky/core/command'
 import { Logger } from '@swinky/core/logger'
 import * as config from '../../config.json'
+import { Message } from 'discord.js'
+import { MessageContext } from 'vk-io'
+
+export async function commandNotFound (
+  context: Message | MessageContext<Record<string, any>>
+) {
+  var builder = 'Неизвестная команда.\nВозможно вы имели ввиду:\n\n'
+  CommandDispatcher.get().asMap.forEach(command => {
+    builder += `${command.name}, `
+  })
+  builder = builder.trim()
+  builder = builder.slice(0, -1)
+
+  if (context instanceof Message) {
+    context.channel.send(builder)
+  } else {
+    context.send(builder)
+  }
+}
 
 class HelpCommand extends SwinkyCommand {
   argumentParserWithoutContext (): ArgumentParser {

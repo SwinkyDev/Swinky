@@ -2,6 +2,7 @@ import * as config from '../../config.json'
 import { Client } from 'discord.js'
 import { Logger } from '@swinky/core/logger'
 import { CommandDispatcher } from '@swinky/core/command'
+import { commandNotFound } from '../swinky-plugin-main/plugin'
 
 const client: Client = new Client()
 client.login(config.discord_token)
@@ -37,6 +38,8 @@ module.exports.run = async () => {
         message
       )
       swinkyCommand.dispatch(context)
+    } else {
+      commandNotFound(message)
     }
   })
 }

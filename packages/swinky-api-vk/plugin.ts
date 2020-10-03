@@ -2,6 +2,7 @@ import { CommandDispatcher } from '@swinky/core/command'
 import { Logger } from '@swinky/core/logger'
 import { VK } from 'vk-io'
 import * as config from '../../config.json'
+import { commandNotFound } from '../swinky-plugin-main/plugin'
 
 const vk: VK = new VK({
   token: config.vk_token,
@@ -37,6 +38,8 @@ module.exports.run = async () => {
         message
       )
       swinkyCommand.dispatch(context)
+    } else {
+      commandNotFound(message)
     }
   })
 }
