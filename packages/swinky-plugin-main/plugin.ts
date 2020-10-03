@@ -5,6 +5,7 @@ import {
   SwinkyCommand
 } from '@swinky/core/command'
 import { Logger } from '@swinky/core/logger'
+import * as config from '../../config.json'
 
 class HelpCommand extends SwinkyCommand {
   argumentParserWithoutContext (): ArgumentParser {
@@ -22,7 +23,7 @@ class HelpCommand extends SwinkyCommand {
     var builder = '\n'
     CommandDispatcher.get().asMap.forEach((command, name) => {
       if (command.argumentParserWithoutContext()) {
-        builder += `/${name}`
+        builder += `${config.command_prefix}${name}`
         for (const argument of command.argumentParserWithoutContext().array) {
           builder += ` <${argument}>`
         }
