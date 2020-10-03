@@ -1,0 +1,9 @@
+{
+  "name": "@swinky/plugin-main",
+  "version": "1.0.0",
+  "description": "Swinky main plugin",
+  "repository": "https://github.com/kdevmc/Swinky",
+  "author": "kdevmc",
+  "license": "MIT",
+  "private": true
+}

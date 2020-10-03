@@ -1,0 +1,12 @@
+{
+  "name": "@swinky/api-vk",
+  "version": "1.0.0",
+  "description": "Swinky API VK",
+  "repository": "https://github.com/kdevmc/Swinky",
+  "author": "kdevmc",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vk-io": "^4.0.3"
+  }
+}

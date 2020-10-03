@@ -1,0 +1,12 @@
+{
+  "name": "@swinky/api-discord",
+  "version": "1.0.0",
+  "description": "Swinky API Discord",
+  "repository": "https://github.com/kdevmc/Swinky",
+  "author": "kdevmc",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
