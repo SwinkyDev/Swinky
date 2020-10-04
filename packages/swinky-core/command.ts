@@ -132,10 +132,6 @@ export class ArgumentParser {
     ...args: string[]
   ) {
     if (contextArgs) {
-      if (contextArgs.length < args.length) {
-        return
-      }
-
       this._contextArgs = contextArgs
       this._lastArgumentBuilder = lastArgumentBuilder
       this._array = args
