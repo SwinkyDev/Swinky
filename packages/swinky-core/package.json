@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@types/node": "^14.11.8",
+    "@types/node": "^14.11.11",
     "discord.js": "^12.3.1",
     "vk-io": "^4.0.3"
   },
