@@ -1084,10 +1084,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
   integrity sha512-8OQ9CL+VWyt3JStj7HX7/ciTL2V3Rl1Wf5OL+SNTm0yK1KvtReVulksyeRnCANHHuUxHlQig+JJDlUhBt1NQDQ==
 
-vk-io@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/vk-io/-/vk-io-4.0.3.tgz#16cff47de00350342d344d32af2e24ff1be47f2b"
-  integrity sha512-JvocZvqcpueMitagkhHDC28aZnHA24BY3GPibvKNrzhW3thqcS6RDe4YjOz7FGTL9o/xcPdgXzmBujKdT6tdTg==
+vk-io@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/vk-io/-/vk-io-4.0.4.tgz#1c52269e91d8e37bbe38082dff62216635ebd641"
+  integrity sha512-4hPMNLx/IIFllYaOzEaY19WnxD79eCRgTXazR1AP0vD3Z3x2n5dfat6ndPOGbt1al6KJXdLWMFHu58okuWPs/Q==
   dependencies:
     abort-controller "^3.0.0"
     debug "^4.2.0"
