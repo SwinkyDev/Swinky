@@ -360,10 +360,10 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-debug@^4.0.1, debug@^4.1.1, debug@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
-  integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
+debug@^4.0.1, debug@^4.1.1, debug@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
+  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
   dependencies:
     ms "2.1.2"
 
@@ -1084,13 +1084,13 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
   integrity sha512-8OQ9CL+VWyt3JStj7HX7/ciTL2V3Rl1Wf5OL+SNTm0yK1KvtReVulksyeRnCANHHuUxHlQig+JJDlUhBt1NQDQ==
 
-vk-io@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/vk-io/-/vk-io-4.0.4.tgz#1c52269e91d8e37bbe38082dff62216635ebd641"
-  integrity sha512-4hPMNLx/IIFllYaOzEaY19WnxD79eCRgTXazR1AP0vD3Z3x2n5dfat6ndPOGbt1al6KJXdLWMFHu58okuWPs/Q==
+vk-io@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/vk-io/-/vk-io-4.1.0.tgz#b27050361c2665c333dc2d0b44b764547b5f1c8d"
+  integrity sha512-3XZjdbFEZqO0EpiI1isPmakL7gUyllm/yo7rUV/jjCnas1i3ZXa4n04aNtcIUuTsvvyNikEEIhChJJdp5XFT5g==
   dependencies:
     abort-controller "^3.0.0"
-    debug "^4.2.0"
+    debug "^4.3.1"
     form-data "^3.0.0"
     inspectable "^1.0.0"
     middleware-io "^2.5.0"
