@@ -7,6 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "vk-io": "^4.0.4"
+    "vk-io": "^4.1.1"
   }
 }
